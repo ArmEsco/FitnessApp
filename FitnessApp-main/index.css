@@ -1,0 +1,165 @@
+/* Global CSS variables for easy color management */
+:root {
+  --primary-color: rgb(250, 101, 32); /* Primary accent color for the app */
+  --hover-color: #fad7d7; /* Color for hover effects */
+  --bg-color: #e4e4e4; /* Light gray background color for the page */
+  --text-color: aliceblue; /* Default aliceblue text color */
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect for elements */
+}
+
+/* Reset default margin, padding, and box-sizing across elements */
+* {
+  margin: 0; /* Remove default margin from all elements */
+  padding: 0; /* Remove default padding from all elements */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+html, body {
+  height: 100%; /* Makes the body and html stretch to full height of the viewport */
+  margin: 0; /* Removes any default margins */
+}
+
+/* Body styling */
+body {
+  font-family: 'Roboto', sans-serif; /* Set font family to Roboto */
+  display: flex;
+  flex-direction: column; /* Stacks header, main, and footer vertically */
+  color: var(--text-color); 
+  background-color: var(--bg-color); /* Set background color to defined variable */
+}
+
+/* Main content takes up remaining space between header and footer */
+main {
+  flex: 1; /* Allows main content to grow and fill available space */
+}
+
+/* Header styling */
+header {
+  background-color: var(--primary-color); /* Set background color for header */
+  padding: 1rem; /* Add padding around header content */
+  display: flex; /* Use flexbox for layout within the header */
+  justify-content: space-between; /* Space out items evenly within header */
+  align-items: center; /* Vertically center items within header */
+}
+
+/* Main title styling (inside header) */
+header h1 {
+  font-size: 1.8rem; /* Set font size of header title */
+}
+
+/* Navigation styling */
+header nav ul {
+  list-style: none; /* Remove default list bullets from nav */
+  display: flex; /* Use flexbox to arrange list items horizontally */
+}
+  /* color: var(--primary-color); /* Set link text color */ 
+/* Styling for anchor links inside navigation */
+header nav a {
+  color: var(--primary-color);
+  text-decoration: none; /* Remove default underline from links */
+  padding: 10px 20px; /* Add padding around links */
+  background-color: var(--text-color); /* Set link background color */
+  border-radius: 5px; /* Add rounded corners to links */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for navigation links */
+header nav a:hover {
+  background-color: var(--hover-color); /* Change background color when hovered */
+}
+
+/* Description section styling */
+.description {
+  background: linear-gradient(to bottom, var(--primary-color), rgb(255, 172, 47)); /* Gradient background */
+  padding: 2rem; /* Add padding around section content */
+  text-align: center; /* Center-align text */
+}
+
+/* Heading (h2) styling inside description section */
+.description h2 {
+  font-size: 2rem; /* Set font size for heading */
+}
+
+/* Paragraph styling in description section */
+.description p {
+  margin: 20px auto; /* Add top and bottom spacing around paragraph */
+  max-width: 550px; /* Limit max width of paragraph */
+}
+
+/* Button styling in description section */
+.description a {
+  padding: 0.5rem 1.5rem; /* Add padding around button text */
+  font-size: 1rem; /* Set font size of button text */
+  background-color: var(--text-color); /* Set button background color */
+  border: none; /* Remove default button border */
+  border-radius: 8px; /* Add rounded corners to button */
+  cursor: pointer; /* Set cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  text-decoration: none; /* Remove default underline from links */
+  color: var(--primary-color); /* Set link color */
+}
+
+/* Hover effect for button */
+.description a:hover {
+  background-color: var(--hover-color); /* Change background color when hovered */
+}
+
+/* Features section styling */
+.features {
+  padding: 2rem; /* Add padding around section content */
+  background: linear-gradient(to bottom, rgb(255, 172, 47), var(--bg-color) 5%); /* Gradient background for items */
+  text-align: center; /* Center-align text */
+}
+
+/* Heading (h3) styling inside features section */
+.features h2 {
+  color: #792910; /* Set heading text color */
+  font-size: 1.6rem; /* Set font size for heading */
+  margin-bottom: 1rem; /* Add bottom margin to heading */
+  margin-top: 30px;
+}
+
+/* Unordered list styling in features section */
+.features ul {
+  margin: auto; /* Center-align list within section */
+  max-width: 300px; /* Limit max width of list */
+  padding: 10px; /* Add padding inside list */
+  list-style: none; /* Remove default list bullets */
+}
+
+/* List item styling inside features section */
+.features li {
+  background: linear-gradient(to bottom, hsl(24, 100%, 62%), #f8cba0); /* Gradient background for items */
+  padding: 20px; /* Add padding around item content */
+  border-radius: 8px; /* Add rounded corners to items */
+  box-shadow: var(--shadow); /* Add shadow effect to items */
+  margin-bottom: 10px; /* Add space between items */
+  overflow: hidden; /* Ensures content doesn't overflow when hidden */
+  transition: all 0.6s ease; /* Smooth transition for height change */
+  position: relative; /* Necessary for absolute positioning of dropdown */
+  cursor: text; /* Change cursor to pointer for interactivity */
+  transition: 0.5s ease;
+}
+.features .dropdown {
+  display: none; /* Initially hide the dropdown */
+  background: var(--text-color); /* Background color for dropdown */
+  color: var(--primary-color); /* Text color */
+  padding: 1rem; /* Add padding around dropdown content */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: var(--shadow); /* Add shadow for dropdown */
+  text-align: center; /* Center-align content */
+  
+  
+}
+
+/* Show dropdown on hover */
+.features li:hover .dropdown {
+  display: block; /* Make dropdown visible */
+}
+
+/* Styling for the footer section */
+footer {
+  background: #472115;  /* Sets the background color of the footer */
+  text-align: center;  /* Centers the text inside the footer */
+  padding: 20px;  /* Adds padding inside the footer */
+}

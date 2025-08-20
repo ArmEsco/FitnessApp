@@ -1,0 +1,35 @@
+/* List item styling inside features section */
+.features li {
+    background: linear-gradient(to bottom, hsl(24, 100%, 62%), #f8cba0); /* Gradient background for items */
+    color: var(--text-color); /* Set text color for items */
+    padding: 20px; /* Add padding around item content */
+    border-radius: 8px; /* Add rounded corners to items */
+    box-shadow: var(--shadow); /* Add shadow effect to items */
+    margin-bottom: 10px; /* Add space between items */
+    overflow: hidden; /* Ensures content doesn't overflow when hidden */
+    transition: all 0.6s ease; /* Smooth transition for height change */
+    position: relative; /* Necessary for absolute positioning of dropdown */
+    cursor: pointer; /* Change cursor to pointer for interactivity */
+  }
+  
+  /* General styling for dropdown container */
+  .features .dropdown {
+    display: none; /* Initially hide the dropdown */
+    background: var(--text-color); /* Background color for dropdown */
+    color: var(--primary-color); /* Text color */
+    padding: 1rem; /* Add padding around dropdown content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: var(--shadow); /* Add shadow for dropdown */
+    position: absolute; /* Position relative to the list item */
+    z-index: 10; /* Ensure dropdown is above other content */
+    width: 300px; /* Fixed width for dropdown */
+    top: 100%; /* Position below the list item */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for exact centering */
+    text-align: center; /* Center-align content */
+  }
+  
+  /* Show dropdown on hover */
+  .features li:hover .dropdown {
+    display: block; /* Make dropdown visible */
+  }

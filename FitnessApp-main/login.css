@@ -1,0 +1,90 @@
+/* Global CSS variables for easy color management */
+:root {
+  --primary-color: rgb(250, 101, 32); /* Primary accent color for the app */
+  --hover-color: #db4500; /* Color for hover effects */
+  --bg-color: #e4e4e4; /* Light gray background color for the page */
+  --text-color: aliceblue; /* Default dark green text color */
+}
+
+html, body {
+  height: 100%; /* Makes the body and html stretch to full height of the viewport */
+  margin: 0; /* Removes any default margins */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column; /* Stacks header, main, and footer vertically */
+}
+
+/* Main content takes up remaining space between header and footer */
+main {
+  flex: 1; /* Allows main content to grow and fill available space */
+}
+
+header {
+  text-align: center;
+  background: linear-gradient(to bottom, var(--primary-color)40%, rgb(247, 176, 84)); /* Gradient background for header*/
+  color: var(--text-color);
+  padding: 1em 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  background: white;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+  margin-bottom: 1em;
+}
+
+.form-group {
+  margin-bottom: 1em;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 0.75em;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background-color: #472115;
+  color: var(--text-color);
+  width: 100%;
+}
