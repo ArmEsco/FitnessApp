@@ -1,0 +1,27 @@
+{
+  "name": "fitnessapp",
+  "version": "1.0.0",
+  "description": "A fitness app",
+  "keywords": [
+    "fitness",
+    "health"
+  ],
+  "homepage": "https://github.com/ArmEsco/FitnessApp#readme",
+  "bugs": {
+    "url": "https://github.com/ArmEsco/FitnessApp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArmEsco/FitnessApp.git"
+  },
+  "license": "ISC",
+  "author": "Armando Escobar, Jesus Violante",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "~5.1.0"
+  }
+}
