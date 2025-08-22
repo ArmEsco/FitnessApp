@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link href="/styles/login.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="banner">
+      <h2>Welcome to JABZ Fitness</h2>
+    </header>
+    <main>
+      <form id="login">
+        <h2>Login</h2>
+        <fieldset class="login-details">
+          <div class="login-group">
+            <label>Email </label>
+            <input
+              type="text"
+              name="user"
+              id="user"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="login-group">
+            <label>Password</label>
+            <input
+              type="password"
+              name="pass"
+              id="pass"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+          <button type="submit" class="btn login-btn">Login</button>
+        </fieldset>
+        <fieldset class="sign-up">
+          <p>
+            Not a member?
+            <a href="/views/sign-up.html">Sign up here!</a>
+          </p>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <h4>&copy;2025 JABZ Fiteness | All Rights Reserved</h4>
+    </footer>
+  </body>
+</html>

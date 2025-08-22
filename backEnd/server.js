@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, "../frontEnd")));
 // routes
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../frontEnd/views", "index.html"));
+  res.sendFile(path.join(__dirname, "../frontEnd/views", "login.html"));
 });
 
 app.listen(port, () => {
